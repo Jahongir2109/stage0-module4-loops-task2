@@ -5,7 +5,7 @@ public class Multiplication {
         int counter=0;
         int multiply=1;
         while (counter<=multiplyByAndToInclusive){
-            multiply=multiply*counter;
+            System.out.println(multiply=multiply*counter);
         }
     }
 }
