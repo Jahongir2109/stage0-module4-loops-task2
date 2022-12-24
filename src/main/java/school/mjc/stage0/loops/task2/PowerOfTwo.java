@@ -6,7 +6,7 @@ public class PowerOfTwo {
     }
     public static void printPower(int power) {
         int i=0;
-        while (i<=power){
+        while (i<=power+1){
             System.out.println((int)Math.pow(2,i));
             i++;
         }
