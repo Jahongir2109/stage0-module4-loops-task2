@@ -5,10 +5,10 @@ public class PowerOfTwo {
         printPower(4);
     }
     public static void printPower(int power) {
-        int i=0;
-        while (i<=power+1){
-            System.out.println((int)Math.pow(2,i));
-            i++;
+        int counter=0;
+        while (counter<=power){
+            System.out.println((int)Math.pow(2,counter));
+            counter++;
         }
     }
 }

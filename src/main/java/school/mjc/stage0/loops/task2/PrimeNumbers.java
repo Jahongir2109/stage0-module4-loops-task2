@@ -1,17 +1,23 @@
 package school.mjc.stage0.loops.task2;
 
 public class PrimeNumbers {
-    public static void main(String[] args) {
-        printPrimeNumbers(33);
-    }
-    public static void printPrimeNumbers(int printToInclusive) {
-        int first=0;
-        int second=1;
-        while (second<=printToInclusive){
-            first=first+second;
-            second=first+second;
-            System.out.println(first);
-            System.out.println(second);
+    public void printPrimeNumbers(int printToInclusive) {
+        int counter=1;
+        boolean state;
+        while (counter<=printToInclusive){
+            state=false;
+            int i=2;
+            while (i<counter){
+                if(counter%i==0){
+                    state=true;
+                    break;
+                }
+                i++;
+            }
+            if(!state && counter>1) {
+                System.out.println(counter);
+            }
+            counter++;
         }
     }
 }
