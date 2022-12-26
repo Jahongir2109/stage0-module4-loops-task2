@@ -3,8 +3,10 @@ package school.mjc.stage0.loops.task2;
 public class WordsBuilder {
     public void buildPhrase(char... chars) {
         String phrase="";
-        for (int i = 0; i < chars.length; i++) {
-            phrase+=chars[i];
+        int counter=0;
+        while (counter<chars.length){
+            phrase+=chars[counter];
+            counter++;
         }
     }
 }
