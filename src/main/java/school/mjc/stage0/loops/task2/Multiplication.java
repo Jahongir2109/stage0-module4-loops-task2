@@ -11,7 +11,7 @@ public class Multiplication {
         } else if (multiplyByAndToInclusive<0) {
             int temp=-1*multiplyByAndToInclusive;
             int counter=0;
-            while (counter<temp){
+            while (counter<=temp){
                 System.out.println(counter*multiplyByAndToInclusive);
                 counter++;
             }
